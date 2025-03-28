@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>One Page Website</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f4a9f4;
+              color: #333;
+          }
+  
+          nav {
+              background-color: #511;
+              padding: 10px 0;
+              text-align: center;
+          }
+  
+          nav ul {
+              list-style: none;
+              padding: 0;
+          }
+  
+          nav ul li {
+              display: inline;
+              margin: 0 15px;
+          }
+  
+          nav ul li a {
+              color: white;
+              text-decoration: none;
+              font-size: 18px;
+          }
+  
+          nav ul li a:hover {
+              text-decoration: underline;
+          }
+  
+          section {
+              padding: 50px 20px;
+              margin: 20px 0;
+          }
+  
+          section h1, section h2 {
+              text-align: center;
+              color: #333;
+          }
+  
+          section p {
+              text-align: center;
+              font-size: 18px;
+              color: #555;
+          }
+  
+          #pictures img {
+              margin: 10px;
+              border-radius: 8px;
+              width: 300px;
+              height: 200px;
+              object-fit: cover;
+          }
+  
+          form {
+              max-width: 600px;
+              margin: 0 auto;
+              background-color: #fff;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+  
+          form label {
+              display: block;
+              margin-bottom: 10px;
+          }
+  
+          form input, form textarea {
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+          }
+  
+          form button {
+              background-color: #511;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+  
+          form button:hover {
+              background-color: #400;
+          }
+  
+          #video iframe {
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: 315px;
+              border-radius: 8px;
+          }
+  
+          footer {
+              background-color: #511;
+              color: white;
+              text-align: center;
+              padding: 15px;
+              margin-top: 20px;
+          }
+      </style>
+  </head>
+  <body>
+      <nav>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#pictures">Pictures</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#video">Videos</a></li>
+          </ul>
+      </nav>
+  
+      <section id="home">
+          <h1>Welcome, here's my Website</h1>
+          <p>her's my simple one-page website that i created with basic HTML elements and styled with some CSS.</p>
+      </section>
+  
+      <section id="pictures">
+          <h2>Images Gallery</h2>
+          <p>some images:</p>
+          <img src="" alt="image 1">
+          <img src="" alt="image 2">
+          <img src="" alt="image 3">
+      </section>
+  
+      <section id="contact">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+  
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="4" required></textarea><br>
+  
+              <button type="submit">Send Message</button>
+          </form>
+      </section>
+  
+      <section id="video">
+          <h2>Video</h2>
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+  
+      <footer>
+          <p>&copy; 2025 All rights reserved.</p>
+      </footer>
+  
+  </body>
+</html>
