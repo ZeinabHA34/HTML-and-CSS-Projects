@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeinab Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-around;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      margin-top: 60px;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      filter: brightness(60%);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      width: 300px;
+      border-radius: 15px;
+      filter: grayscale(50%);
+    }
+
+    table {
+      width: 80%;
+      margin: 40px auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 2px solid #444;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .columns {
+      display: flex;
+      margin: 40px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+      color: #333;
+      height: 200px;
+      width: 50%;
+    }
+
+    .column:nth-child(1) {
+      background-color: #f0f0f0;
+    }
+
+    .column:nth-child(2) {
+      background-color: #e0e0e0;
+    }
+
+    p.hover-text {
+      margin: 20px;
+      transition: color 0.3s;
+    }
+
+    p.hover-text:hover {
+      color: #e91e63;
+    }
+
+    .overlay-container {
+      position: relative;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .overlay-container img {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.4s;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay-container:hover .overlay {
+      opacity: 1;
+    }
+
+    .video-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    video {
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .video-overlay {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .video-overlay video {
+      width: 100%;
+    }
+
+    .video-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#table">Projects</a>
+    <a href="#video">Video</a>
+  </div>
+
+  <div class="hero" id="home">
+    <img src="https://wallpapers.com/images/featured/hero-background-aefu926aqlmop6x3.jpg" alt="Hero Image">
+    <div class="hero-text">Welcome to My Portfolio</div>
+  </div>
+
+  <div class="image-container" id="about">
+    <img src="https://imgcdn.stablediffusionweb.com/2025/1/10/e76655d2-7533-409b-93ae-87de3d0c8611.jpg" alt="Profile Picture">
+  </div>
+
+  <table id="table">
+    <tr>
+      <th>Project</th>
+      <th>Year</th>
+      <th>Status</th>
+    </tr>
+  <tr>
+      <td>Bootstrap 4 project</td>
+      <td>2025</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>Portfolio Website</td>
+      <td>2025</td>
+      <td>Completed</td>
+    </tr>
+  
+  </table>
+
+  <div class="columns">
+    <div class="column">
+      <h3>Column 1</h3>
+      <p>This is the first column with some text in it.</p>
+    </div>
+    <div class="column">
+      <h3>Column 2</h3>
+      <p>This is the second column with more content.</p>
+    </div>
+  </div>
+
+  <p class="hover-text">Hover Me! effect!</p>
+
+  <div class="overlay-container">
+    <img src="https://img.freepik.com/premium-photo/photo-realistic-depiction-vibrant-parade-pride-celebrating-independence-day-us-perfe_980716-111285.jpg?semt=ais_country_boost&w=740" alt="Overlay">
+    <div class="overlay">Hello Overlay!</div>
+  </div>
+
+ 
+  <div class="video-overlay" id="video">
+    <video autoplay muted loop>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+    <div class="video-text">Experience the Moment</div>
+  </div>
+
+ 
+  <footer>
+    &copy; 2025 Zeinab Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>
